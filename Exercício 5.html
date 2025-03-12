@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var c = prompt("Qual combustível você ira comprar A-álcool. G-gasolina ")
+        var n = parseFloat(prompt("Quantos litros você comprou?"))
+        var p = parseFloat(prompt("Qual o preço do litro?"))
+
+        var ga = p * 0.94
+
+        if(c == "A" && n <= 20){
+            var am2 = p * 0.97
+            alert(`O valor a ser pago será ${am2.toFixed(2)}`)
+        }else if (c == "A" && n > 20){
+            var am = p*0.95
+            alert(`O valor a ser pago será ${am.toFixed(2)}`)
+        }else if (c == "G" && n<= 20){
+            var ga2 = p* 0.96
+            alert(`O valor a ser pago será ${ga2.toFixed(2)}`)
+        }else if (c == "G" && n > 20){
+            alert(`O valor a ser pago será ${ga.toFixed(2)}`)
+        }else{
+            alert("Valor inválido")
+        }
+    </script>
+</body>
+</html>

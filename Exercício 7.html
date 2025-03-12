@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var s1 =parseFloat(prompt("Qual o seu salário?"))
+    
+        if (s2 > 0 && s2 < 2800){
+            var s2 = s1 * 1.20
+        var s21 = s1 * 0.2
+            alert(`O seu salário será $${s2}, houve o aumento de 20% dos $${s1}, ou seja, aumentou $${s21}`)
+        }else if (s1 >= 2800 && s1 < 7000){
+           var s3 = s1* 0.15
+           var s31 = s3 + s1
+           alert(`O seu salário será $${s31}, houve o aumento de 15% dos $${s1}, ou seja, aumentou $${s3}`)
+        }else if(s1 >= 7000 && s1 < 15000 ){
+            var s4 = s1 * 0.1
+            var s41 = s4 + s1
+            alert(`O seu salário será $${s41}, houve o auento de 10% dos $${s1}, ou seja, aumentou $${s4}`)
+        }else{
+            var s5 = s1 * 0.05
+            var s51 = s5 + s1
+            alert(`O seu salário será $${s51}, houve o aumento de 5% dos $${s1}, ou seja, aumentou $${s5}`)
+        }
+    </script>
+</body>
+</html>
