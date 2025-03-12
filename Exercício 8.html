@@ -9,8 +9,49 @@
     <script>
         var vh = parseFloat(prompt("Qual o valor da sua hora?"))
         var qh = parseFloat(prompt("Qual a sua quantidade de horas trabalhada no mês?"))
+        var t = vh * qh
 
-        
+        if(t <= 900){
+            var i9 = t * 0.10
+            var d9 = i9
+            var sl9 = t - d9
+            alert(`Salário Bruto: $${t}`)
+            alert(`INSS é $${i9}`)
+            alert(`Sindicato $${s9}`)
+            alert(`Total de descontos $${d9}`)
+            alert(`Salário líquido $${sl9}`)
+        }else if (t <= 1500){
+            var i1 = t * 0.10
+            var ir1 = t * 0.05
+            var d1 = i1 + ir1
+            var sl1 = t - d1
+            alert(`Salário Bruto: $${t}`)
+            alert(`INSS é $${i1}`)
+            alert(`Imposto de renda $${ir1}`)
+            alert(`Total de descontos $${d1}`)
+            alert(`Salário líquido $${sl1}`)
+        }else if(t <= 2500){
+            var i2 = t *0.10
+            var ir2 = t * 0.10
+            var d2 = i2 + ir2
+            var sl2 = t - d2
+            alert(`Salário Bruto: $${t}`)
+            alert(`INSS é $${i2}`)
+            alert(`Imposto de renda $${ir2}`)
+            alert(`Total de descontos $${d2}`)
+            alert(`Salário líquido $${sl2}`)
+        }else {
+            var i5 = t * 0.10
+            var ir5 = t * 0.20
+            var d5 = i5 + ir5
+            var sl5 = t - d5
+            alert(`Salário Bruto: $${t}`)
+            alert(`INSS é $${i5}`)
+            alert(`Imposto de renda $${ir5}`)
+            alert(`Total de descontos $${d5}`)
+            alert(`Salário líquido $${sl5}`)
+        }
+
     </script>
 </body>
 </html>
